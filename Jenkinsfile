@@ -25,14 +25,14 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            // This will be executed if job is successfull
-            echo 'Pipeline executed succeefully'
+    post{
+        success{
+            //This will be executed if the pipeline execution is successful
+            echo 'Pipeline executed successfully!'
         }
-        failure {
-            // Thiss will be executed if job failed
-            eco "Pipeline failed"
+        failure{
+            //This will be executed if the pipeline execution fails
+            echo 'Pipeline failed!'
         }
     }
 }
