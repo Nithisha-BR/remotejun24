@@ -8,3 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "My Reusable Job 1 Executed"
+      - name: Check out the repository
+      - uses: actions/checkout@v2
