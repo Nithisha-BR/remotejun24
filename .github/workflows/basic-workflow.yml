@@ -9,5 +9,5 @@ jobs:
 
     steps:
       - run: echo " Job basic_workflow is executing as part of new workflow"
-      - run: mvn clean package
+      - run: cd ../../ & mvn clean package
       
