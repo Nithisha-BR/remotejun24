@@ -3,6 +3,8 @@ run-name: Testing out GitHub Actions
 
 on: [push]
 
+env: 
+  owner_name: Nithi
 jobs:
   basic_workflow:
     runs-on: ubuntu-latest
@@ -10,4 +12,4 @@ jobs:
     steps:
       - run: echo " Job basic_workflow is executing as part of new workflow"
       - run: pwd & ls & cd .. & ls
-      
+      - run: echo " The owner is $owner_name"
