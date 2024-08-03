@@ -7,6 +7,7 @@ jobs:
   reusejob1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "My Reusable Job 1 Executed"
       - name: Check out the repository
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.7
+      - run: echo "My Reusable Job 1 Executed"
+
