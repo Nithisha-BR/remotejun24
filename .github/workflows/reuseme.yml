@@ -1,7 +1,7 @@
 name: Reusable workclow
 
 on: 
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   reusejob1:
