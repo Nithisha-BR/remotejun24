@@ -16,11 +16,3 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-    if: startsWith(github.ref, 'refs/heads/demo*')
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "---JOB EXECUTION ON MAIN BRANCH PUSH---"
-      - uses: actions/checkout@v4.1.7
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
